@@ -8,23 +8,35 @@ console.log(parse(runPattern));
 
 function parse(pattern) {
   var tables = {
+    nightlife: pickFrom(nightlife()),
     location: pickFrom(location()),
     employer: employer(),
     jobType: jobType(),
     macGuffin: macGuffin(),
     twist: twist()
   }
-  return Mustache.render(pattern, tables);
+  while(pattern.indexOf('{{') >= 0) {
+    pattern = Mustache.render(pattern, tables);
+  }
+  return pattern;
 }
 
 function location() {
   return locations = {
-    1: "Bar, Club oder Restaurant",
+    1: "{{nightlife}}",
     2: "Lagerhaus, Dock, Fabrik oder anderer wenig frequentierter Ort",
     3: "Barrens oder irgendein anderes urbanes Dreksloch",
     4: "Fahrendes Fahrzeug",
     5: "Matrixhost",
     6: "Astralraum"
+  }
+}
+
+function nightlife() {
+  return locations = {
+    1: "einer Bar",
+    2: "einem Club",
+    3: "einem Restaurant"
   }
 }
 
