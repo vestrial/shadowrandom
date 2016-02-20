@@ -61,61 +61,61 @@ function parse(pattern) {
 
 function meetLocation() {
   return {
-    name: "meetLocation",
-    table: {
-      1: "{{nightlife}}",
-      2: "Lagerhaus, Dock, Fabrik oder anderer wenig frequentierter Ort",
-      3: "Barrens oder irgendein anderes urbanes Dreksloch",
-      4: "Fahrendes Fahrzeug",
-      5: "Matrixhost",
-      6: "Astralraum"
+    "name": "meetLocation",
+    "table": {
+      "1": "{{nightlife}}",
+      "2": "Lagerhaus, Dock, Fabrik oder anderer wenig frequentierter Ort",
+      "3": "Barrens oder irgendein anderes urbanes Dreksloch",
+      "4": "Fahrendes Fahrzeug",
+      "5": "Matrixhost",
+      "6": "Astralraum"
     }
   }
 }
 
 function nightlife() {
   return {
-    name: "nightlife",
-    table: {
-      1: "einer Bar",
-      2: "einem Club",
-      3: "einem Restaurant"
+    "name": "nightlife",
+    "table": {
+      "1": "einer Bar",
+      "2": "einem Club",
+      "3": "einem Restaurant"
     }
   }
 }
 
 function employer() {
   return {
-    name: "employer",
-    table:  {
-      1: "employer"
+    "name": "employer",
+    "table":  {
+      "1": "employer"
     }
   }
 }
 
 function jobType() {
   return {
-    name: "jobType",
-    table:  {
-      1: "jobType"
+    "name": "jobType",
+    "table":  {
+      "1": "jobType"
     }
   }
 }
 
 function macGuffin() {
   return {
-    name: "macGuffin",
-    table:  {
-      1: "macGuffin"
+    "name": "macGuffin",
+    "table":  {
+      "1": "macGuffin"
     }
   }
 }
 
 function twist() {
   return {
-    name: "twist",
-    table:  {
-      1: "twist"
+    "name": "twist",
+    "table":  {
+      "1": "twist"
     }
   }
 }
