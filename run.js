@@ -1,13 +1,20 @@
+var Mustache = require("mustache");
 
-
-var runPattern = "Die Runner gehen zu einem Treffen in " + pickFrom(location()) + " für ihren nächsten Job." +
-" Sie werden von " + employer() + " für ein/e/n " + jobType() + " gegen " + macGuffin() +
-" angeheuert. Der Run wird kompliziert, als " + twist() + "!"
+var runPattern = "Die Runner gehen zu einem Treffen in {{location}} für ihren nächsten Job." +
+" Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
+" Der Run wird kompliziert, als {{twist}}!"
 
 console.log(parse(runPattern));
 
 function parse(pattern) {
-  return pattern;
+  var tables = {
+    location: pickFrom(location()),
+    employer: employer(),
+    jobType: jobType(),
+    macGuffin: macGuffin(),
+    twist: twist()
+  }
+  return Mustache.render(pattern, tables);
 }
 
 function location() {
