@@ -1,11 +1,6 @@
 var Mustache = require("mustache");
 var tableCollection = collectTables();
-
-var runPattern = "Die Runner gehen zu einem Treffen in {{meetLocation}} für ihren nächsten Job." +
-" Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
-" Der Run wird kompliziert, als {{twist}}!"
-
-console.log(parse(runPattern));
+var templateMap = createMustacheTemplates(tableCollection);
 
 function collectTables() {
   var tableCollection = [];
@@ -18,16 +13,13 @@ function collectTables() {
   return tableCollection;
 }
 
-function parse(pattern) {
-  var templateMap = {};
+function createMustacheTemplates(tableCollection) {
+  var templateMap = [];
   for(i = 0; i < tableCollection.length; i++) {
-    var table = tableCollection[i];
-    addMustacheTemplate(templateMap, table);
-  }
-  while(pattern.indexOf('{{') >= 0) {
-    pattern = Mustache.render(pattern, templateMap);
-  }
-  return pattern;
+     var table = tableCollection[i];
+     addMustacheTemplate(templateMap, table);
+   }
+   return templateMap;
 }
 
 function addMustacheTemplate(templateMap, table) {
@@ -40,6 +32,31 @@ function pickFrom(randomContent) {
   var numerOfOptions = Object.keys(randomContent.table).length;
   var choice = rollDie(numerOfOptions)
   return randomContent.table[choice];
+}
+
+function rollD6() {
+  return rollDie(6);
+}
+
+function rollDie(sides) {
+  return Math.floor((Math.random() * sides) + 1);
+}
+
+var runPattern = "Die Runner gehen zu einem Treffen in {{meetLocation}} für ihren nächsten Job." +
+" Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
+" Der Run wird kompliziert, als {{twist}}!"
+
+console.log("");
+console.log(parse(runPattern));
+console.log("");
+console.log(parse(runPattern));
+console.log("");
+
+function parse(pattern) {
+  while(pattern.indexOf('{{') >= 0) {
+    pattern = Mustache.render(pattern, templateMap);
+  }
+  return pattern;
 }
 
 function meetLocation() {
@@ -101,12 +118,4 @@ function twist() {
       1: "twist"
     }
   }
-}
-
-function rollD6() {
-  return rollDie(6);
-}
-
-function rollDie(sides) {
-  return Math.floor((Math.random() * sides) + 1);
 }
