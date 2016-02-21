@@ -6,11 +6,11 @@ module.exports = {
       "name": "meetLocation",
       "table": {
         "1": "{{nightlife}}",
-        "2": "Lagerhaus, Dock, Fabrik oder anderer wenig frequentierter Ort",
-        "3": "Barrens oder irgendein anderes urbanes Dreksloch",
-        "4": "Fahrendes Fahrzeug",
-        "5": "Matrixhost",
-        "6": "Astralraum"
+        "2": "{{desolate}}",
+        "3": "die Barrens oder irgendein anderes urbanes Dreksloch",
+        "4": "ein fahrendes Fahrzeug",
+        "5": "einen Matrixhost",
+        "6": "den Astralraum"
       }
     },
     {
@@ -19,6 +19,15 @@ module.exports = {
         "1": "einer Bar",
         "2": "einem Club",
         "3": "einem Restaurant"
+      }
+    },
+    {
+      "name": "desolate",
+      "table": {
+        "1": "ein Lagerhaus",
+        "2": "die Docks",
+        "3": "eine Fabrik",
+        "4": "einem wenig frequentierten Ort"
       }
     },
     {
