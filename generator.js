@@ -1,8 +1,6 @@
 var randomizer = require("./randomizer");
 
-console.log("");
-console.log(randomRun());
-console.log("");
+module.exports.randomRun = randomRun
 
 function randomRun() {
   var runPattern = "Die Runner gehen zu einem Treffen in {{meetLocation}} für ihren nächsten Job." +
