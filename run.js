@@ -1,5 +1,5 @@
 var Mustache = require("mustache");
-var templates = require("./templates");
+var templates = require("./templateParser");
 
 var runPattern = "Die Runner gehen zu einem Treffen in {{meetLocation}} für ihren nächsten Job." +
 " Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
