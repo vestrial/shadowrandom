@@ -1,0 +1,28 @@
+{
+  "name": "shadowrandom",
+  "version": "1.0.0",
+  "description": "A random generator for the Shadowrun RPG.",
+  "main": "run.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vestrial/shadowrandom.git"
+  },
+  "keywords": [
+    "shadowrun",
+    "random",
+    "role-playing",
+    "rpg"
+  ],
+  "author": "Sandra Reupke-Sieroux and Urs Reupke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vestrial/shadowrandom/issues"
+  },
+  "homepage": "https://github.com/vestrial/shadowrandom#readme",
+  "dependencies": {
+    "mustache": "^2.2.1"
+  }
+}
