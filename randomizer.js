@@ -3,7 +3,7 @@ var tableCollection = require("./tables").tableCollection;
 var dice = require("./dice");
 
 module.exports = {
-  parse: function(pattern) {
+  fill: function(pattern) {
     var templateMap = createMustacheTemplates(tableCollection)
     while(pattern.indexOf('{{') >= 0) {
       pattern = Mustache.render(pattern, templateMap);

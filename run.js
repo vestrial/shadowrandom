@@ -9,5 +9,5 @@ function randomRun() {
   " Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
   " Der Run wird kompliziert, als {{twist}}!"
 
-  return randomizer.parse(runPattern);
+  return randomizer.fill(runPattern);
 }
