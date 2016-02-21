@@ -1,4 +1,4 @@
-var templatesParser = require("./templateParser");
+var randomizer = require("./randomizer");
 
 console.log("");
 console.log(randomRun());
@@ -9,5 +9,5 @@ function randomRun() {
   " Sie werden von {{employer}} für ein/e/n {{jobType}} gegen {{macGuffin}} angeheuert." +
   " Der Run wird kompliziert, als {{twist}}!"
 
-  return templatesParser.parse(runPattern);
+  return randomizer.parse(runPattern);
 }
