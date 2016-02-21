@@ -1,13 +1,11 @@
 
-module.exports = {
-  rollD6: function() {
-    return roll(6);
-  },
-  rollDie: function(sides) {
-    return roll(sides);
-  }
+module.exports.rollD6 = rollD6;
+module.exports.rollDie = rollDie;
+
+function rollD6() {
+  return rollDie(6);
 }
 
-function roll(sides) {
+function rollDie(sides) {
   return Math.floor((Math.random() * sides) + 1);
 }

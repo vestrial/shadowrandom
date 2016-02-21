@@ -1,16 +1,17 @@
+module.exports.fill = fill;
+
 var Mustache = require("mustache");
 var tableCollection = require("./tables").tableCollection;
 var dice = require("./dice");
+var templateMap = createMustacheTemplates(tableCollection)
 
-module.exports = {
-  fill: function(pattern) {
-    var templateMap = createMustacheTemplates(tableCollection)
-    while(pattern.indexOf('{{') >= 0) {
-      pattern = Mustache.render(pattern, templateMap);
-    }
-    return pattern;
+function fill(pattern) {
+  while(pattern.indexOf('{{') >= 0) {
+    pattern = Mustache.render(pattern, templateMap);
   }
+  return pattern;
 }
+
 
 function createMustacheTemplates(tableCollection) {
   var templateMap = [];
