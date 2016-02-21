@@ -6,28 +6,35 @@ module.exports = {
       "name": "meetLocation",
       "table": {
         "1": "{{nightlife}}",
-        "2": "{{desolate}}",
-        "3": "die Barrens oder irgendein anderes urbanes Dreksloch",
-        "4": "ein fahrendes Fahrzeug",
-        "5": "einen Matrixhost",
-        "6": "den Astralraum"
+        "2": "{{low-frequented}}",
+        "3": "{{desolate}}",
+        "4": "in ein fahrendes Fahrzeug",
+        "5": "in einen Matrixhost",
+        "6": "im Astralraum"
       }
     },
     {
       "name": "nightlife",
       "table": {
-        "1": "einer Bar",
-        "2": "einem Club",
-        "3": "einem Restaurant"
+        "1": "in eine Bar",
+        "2": "in einen Club",
+        "3": "in ein Restaurant"
+      }
+    },
+    {
+      "name": "low-frequented",
+      "table": {
+        "1": "in ein Lagerhaus",
+        "2": "an den Docks",
+        "3": "in einer Fabrik",
+        "4": "an einem wenig frequentierten Ort"
       }
     },
     {
       "name": "desolate",
       "table": {
-        "1": "ein Lagerhaus",
-        "2": "die Docks",
-        "3": "eine Fabrik",
-        "4": "einem wenig frequentierten Ort"
+        "1": "in die Barrens",
+        "2": "in irgendein urbanes Dreksloch",
       }
     },
     {
@@ -44,31 +51,64 @@ module.exports = {
         "7": "einem Megakonzern (AA-Konzern oder größer)",
         "8": "einem Megakonzern (AA-Konzern oder größer)",
         "9": "einem Verbrechersyndikat (z.B. Yakuza, Mafia)",
-        "10": "einer Magischen Gruppe (z.B. Illuminates of the New Dawn)",
+        "10": "einer magischen Gruppe (z.B. Illuminates of the New Dawn)",
         "11": "einer Privatperson",
-        "12": "einem exotischen oder mysteriösen Wesen (z.B. Freier Geist, Drache, KI)"
+        "12": "{{entity}}"
+      }
+    },
+    {
+      "name": "entity",
+      "table":  {
+        "1": "einem freien Geist",
+        "2": "einem Drachen (in Verkleidung)",
+        "3": "einer KI",
+        "4": "einem Formwandler",
+        "5": "einem mysteriösen Wesen",
+        "6": "einem exotischen Wesen",
       }
     },
     {
       "name": "jobType",
       "table":  {
         "1": "einen Datenklau",
-        "2": "ein Attentat oder Zerstörung",
-        "3": "eine Extraktion oder Einschleusung",
+        "2": "{{destroy}}",
+        "3": "{{in-out}}",
         "4": "eine Ablenkung",
-        "5": "einen Personen- oder Objektschutz",
+        "5": "einen Schutzjob",
         "6": "einen Transport"
+      }
+    },
+    {
+      "name": "in-out",
+      "table":  {
+        "1": "eine Extraktion",
+        "2": "eine Einschleusung",
+      }
+    },
+    {
+      "name": "destroy",
+      "table":  {
+        "1": "ein Attentat",
+        "2": "einen Abriss",
       }
     },
     {
       "name": "macGuffin",
       "table":  {
-        "1": "einen wichtigen Mitarbeiter",
-        "2": "einen Prototypen",
-        "3": "revolutionäre Forschungsergebnisse",
+        "1": "ein wichtiger Mitarbeiter",
+        "2": "ein Prototyp",
+        "3": "eine revolutionäres Forschungsergebnis",
         "4": "eine genmanipulierte Lebensform",
         "5": "ein magisches Objekt",
-        "6": "ein Stadtgebäude, ländlicher Schauplatz oder Infrastrukturobjekt"
+        "6": "{{magGuffin-location}}"
+      }
+    },
+    {
+      "name": "macGuffin-location",
+      "table":  {
+        "1": "ein Stadtgebäude",
+        "2": "ein ländlicher Schauplatz",
+        "3": "ein Infrastrukturobjekt"
       }
     },
     {
@@ -76,9 +116,9 @@ module.exports = {
       "table":  {
         "1": "die Sicherheit ist massiver als erwartet",
         "2": "eine dritte Partei ist ebenfalls interessiert",
-        "3": "das Zielobjekt/die Zielperson ist nicht das, was es/sie zu sein scheint. Das Team wurde angelogen",
+        "3": "das Zielist nicht das, was es zu sein scheint. Das Team wurde angelogen",
         "4": "für den Job wird ein ungewöhnlicher Ausrüstungsgegenstand benötigt",
-        "5": "das Zielobjekt/-person wurde oder wird gerade verlegt",
+        "5": "das Ziel wurde oder wird gerade verlegt",
         "6": "der Auftraggeber haut die Runner übers Ohr"
       }
     }
