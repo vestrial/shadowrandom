@@ -36,39 +36,39 @@ module.exports = {
         return dice.rollD6() + dice.rollD6();
       },
       "table":  {
-        "2": "Geheimgesellschaft (z.B. Schwarze Loge, Human Nation)",
-        "3": "Politische Gruppierung oder Aktivisten (z.B. Humanis Policlub, Mothers of Metahumans)",
-        "4": "Regierungsmitarbeiter oder -behörde",
-        "5": "Kleinerer Konzern (A-Konzern oder kleiner)",
-        "6": "Kleinerer Konzern (A-Konzern oder kleiner)",
-        "7": "Megakonzern (AA-Konzern oder größer)",
-        "8": "Megakonzern (AA-Konzern oder größer)",
-        "9": "Verbrechersyndikat (z.B. Yakuza, Mafia)",
-        "10": "Magische Gruppe (z.B. Illuminates of the New Dawn)",
-        "11": "Privatperson",
-        "12": "Exotisches oder mysteriöses Wesen (z.B. Freier Geist, Drache, KI)"
+        "2": "einer Geheimgesellschaft (z.B. Schwarze Loge, Human Nation)",
+        "3": "einer politischen Gruppierung oder Aktivisten (z.B. Humanis Policlub, Mothers of Metahumans)",
+        "4": "einem Regierungsmitarbeiter oder einer Regierungsbehörde",
+        "5": "einem kleinen Konzern (A-Konzern oder kleiner)",
+        "6": "einem kleinen Konzern (A-Konzern oder kleiner)",
+        "7": "einem Megakonzern (AA-Konzern oder größer)",
+        "8": "einem Megakonzern (AA-Konzern oder größer)",
+        "9": "einem Verbrechersyndikat (z.B. Yakuza, Mafia)",
+        "10": "einer Magischen Gruppe (z.B. Illuminates of the New Dawn)",
+        "11": "einer Privatperson",
+        "12": "einem exotischen oder mysteriösen Wesen (z.B. Freier Geist, Drache, KI)"
       }
     },
     {
       "name": "jobType",
       "table":  {
-        "1": "Datenklau",
-        "2": "Attentat oder Zerstörung",
-        "3": "Extraktion oder Einschleusung",
-        "4": "Ablenkung",
-        "5": "Personen- oder Objektschutz",
-        "6": "Transport"
+        "1": "einen Datenklau",
+        "2": "ein Attentat oder Zerstörung",
+        "3": "eine Extraktion oder Einschleusung",
+        "4": "eine Ablenkung",
+        "5": "einen Personen- oder Objektschutz",
+        "6": "einen Transport"
       }
     },
     {
       "name": "macGuffin",
       "table":  {
-        "1": "Wichtiger Mitarbeiter",
-        "2": "Ein Prototyp",
-        "3": "Revolutionäre Forschungsergebnisse",
-        "4": "Genmanipulierte Lebensform",
-        "5": "Magisches Objekt",
-        "6": "Stadtgebäude, ländlicher Schauplatz oder Infrastrukturobjekt"
+        "1": "einen wichtigen Mitarbeiter",
+        "2": "einen Prototypen",
+        "3": "revolutionäre Forschungsergebnisse",
+        "4": "eine genmanipulierte Lebensform",
+        "5": "ein magisches Objekt",
+        "6": "ein Stadtgebäude, ländlicher Schauplatz oder Infrastrukturobjekt"
       }
     },
     {
