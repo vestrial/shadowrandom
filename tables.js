@@ -65,12 +65,12 @@ module.exports = {
     {
       "name": "twist",
       "table":  {
-        "1": "Die Sicherheit ist massiver als erwartet.",
-        "2": "Eine dritte Partei ist ebenfalls interessiert.",
-        "3": "Zielobjekt/-person ist nicht das, was es/sie zu sein scheint. (Team wurde angelogen.)",
-        "4": "Für den Job wird ein ungewöhnlicher Ausrüstungsgegenstand benötigt.",
-        "5": "Zielobjekt/-person wurde oder wird gerade verlegt.",
-        "6": "Auftraggeber haut die Runner übers Ohr."
+        "1": "die Sicherheit ist massiver als erwartet",
+        "2": "eine dritte Partei ist ebenfalls interessiert",
+        "3": "das Zielobjekt/die Zielperson ist nicht das, was es/sie zu sein scheint. Das Team wurde angelogen",
+        "4": "für den Job wird ein ungewöhnlicher Ausrüstungsgegenstand benötigt",
+        "5": "das Zielobjekt/-person wurde oder wird gerade verlegt",
+        "6": "der Auftraggeber haut die Runner übers Ohr"
       }
     }
   ]
